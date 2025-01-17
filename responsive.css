@@ -1,3 +1,63 @@
+@media (max-width: 900px) {
+    .logo {
+        margin-left: -178px;
+    }
+
+    .nav.left {
+        left: 45px;
+    }
+
+    h5.text {
+        margin-left: 0;
+    }
+
+    h1.text2 {
+        margin-left: 0;
+    }
+
+    #btn {
+        margin-right: 0;
+    }
+
+    .exper {
+        margin-top: -347px;
+        margin-left: -16px;
+        height: 92px;
+        width: 119px;
+    }
+
+    #images-img2 {
+        margin-left: 186px;
+        margin-top: 249px;
+        height: 151px;
+    }
+
+    .images img {
+        padding-top: 80px;
+        padding: 20px;
+    }
+    .text {
+        padding: 0  ;
+        padding-left: 50px;
+    }
+    .phn-icon {
+        display: none;
+    }
+    .about-img {
+        padding-top: 60px;
+    }
+    .about-img img {
+        height: 450px;
+
+    }
+    .header-text h1 {
+        font-size: 36px;
+    }
+    .btn-submit {
+        margin-left: 50px;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar-items {
         display: none;
@@ -385,6 +445,7 @@
         object-fit: contain;
         margin-top: -20px;
     }
+
     .footer-end {
         font-size: 12px;
     }
@@ -397,7 +458,7 @@
         height: 45px;
         font-size: 20px;
         bottom: 56px;
-        right: 5px; 
+        right: 5px;
     }
 }
 
@@ -415,10 +476,13 @@
 
 @media (max-width: 768px) {
     .whatsapp-icon-fix {
-        width: 50px; /* Adjust size for tablets */
+        width: 50px;
+        /* Adjust size for tablets */
         height: 50px;
-        font-size: 24px; /* Adjust icon size */
-        bottom: 15px; /* Adjust positioning */
+        font-size: 24px;
+        /* Adjust icon size */
+        bottom: 15px;
+        /* Adjust positioning */
         right: 15px;
     }
 }

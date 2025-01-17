@@ -92,7 +92,7 @@ function updateSlidePosition() {
 }
 
 // Auto-slide every 3 seconds
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 50000000);
 
 // Trigger animations for the first slide on page load
 triggerAnimations(slideElements[currentIndex]);
