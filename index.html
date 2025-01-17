@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- <<<<---bootstrap link->>>>  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- <<<<---icon-font->>>>  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+
+    <!-- <<<<<<<<<<<<<css>>>>>>>>>> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+<!-- Scroll to Top Button -->
+<div id="scrollToTop" class="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+</div>
+<!-- Fixed WhatsApp Icon -->
+<a href="https://wa.me/1234567890" target="_blank" class="whatsapp-icon-fix">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+
+    <!-- <<<<<<<<<<<<------Navbar->>>>>>>> -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="navbar">
+                <div class="container">
+                    <div class="logo">
+                        <img src="img/jaipur_laundry_logo-removebg-preview.png" alt="">
+                    </div>
+                    <div class="navbar-items">
+                        <ul class="list-items">
+                            <li><a href="index.html">Home</a></li>
+                            <li>
+                                <a href="about.html">About
+                            </li>
+                            <li>
+                                Service <i class="fa navcticn fa-angle-down" aria-hidden="true"></i>
+                                <ul class="dropdown-service">
+                                    <a href="dry-cleaning.html">
+                                        <li>Dry Cleaning</li>
+                                    </a>
+                                    <a href="Stain-removal.html">
+                                        <li>Stain Removal</li>
+                                    </a>
+                                    <a href="wash-press.html">
+                                        <li>Wash & Press</li>
+                                    </a>
+                                    <a href="wash-fold.html">
+                                        <li>Wash & Fold</li>
+                                    </a>
+                                    <a href="shoe-cleaning.html">
+                                        <li>Shoe Cleaning</li>
+                                    </a>
+                                    <a href="steam-pressing.html">
+                                        <li>Steam Pressing</li>
+                                    </a>
+
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <div class="btn">
+                        <a href="https://wa.me/+919001348998"><button>Book Now</button></a>    
+                        </div>
+                    </div>
+                    
+                    <!-- Mobile Toggle Button -->
+                    <div class="navbar-toggle" id="navbar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <<<<<<<<<<<<------NavbarEnd->>>>>>>> -->
+
+    <div class="slider-container">
+        <div class="slides">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <img src="/img/beautiful-cute-girl-dreamily-holding-cozy-knitted-sweaters-hands-blue-background.jpg"
+                    alt="Slide 1">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <h5 class="text">We are Passionate About Laundry</h5>
+                    <h1 class="text2"> Laundry & Dry<br>
+                        Cleaning Service <br>
+                    </h1>
+                    <div class="button-container">
+
+
+                        <a href="https://wa.me/+919001348998"> <button type="button" class="btn btn-primary" id="btn">Contact
+                                Us</button></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="/img/reading-laundry.jpg" alt="Slide 2">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <h5 class="text">We are Passionate About Laundry</h5>
+                    <h1 class="text2"> Laundry & Dry<br>
+                        Cleaning Service <br>
+                    </h1>
+                    <div class="button-container">
+                        <a href="https://wa.me/+919001348998"> <button type="button" class="btn btn-primary" id="btn">Contact
+                                Us</button></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Navigation Buttons -->
+    <button class="nav left" onclick="prevSlide()">&#10094;</button>
+    <button class="nav right" onclick="nextSlide()">&#10095;</button>
+    </div>
+    <!-- <<<<<<<<loundry>>>>>>>>>>> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 laundry-wal">
+                <div class="col-sm-6 images">
+                    <img src="img/men.webp" alt="">
+                    <div class="exper">
+                        <h3>10</h3>
+                        <h6>Years <br> Experience</h6>
+                    </div>
+                </div>
+                <img id="images-img2" src="img/welcome-1.webp" alt="">
+                <div class="col-sm-6 text">
+                    <p>Luandry wala</p>
+                    <h3>We Made Dry Cleaning
+                        <br>
+                        & Laundry Simple
+                    </h3>
+                    <p>Dirty Laundry ? Leave It to Us</p>
+                    <p><span>Where cleanliness meets care. We make your clothes look and feel their best, every
+                            time</span></p>
+                    <div class="check-fa">
+                        <div class="icon-check"><i class="fas fa-check"></i><span>Dry Cleaning</span></div>
+                        <div class="icon-check"><i class="fas fa-check"></i><span>Stain Removal</span></div>
+                        <div class="icon-check"><i class="fas fa-check"></i><span>Wash & Press</span></div>
+                    </div>
+                    <div class="btn-icon">
+                      <a href="https://wa.me/+919001348998"><button>Order now</button></a>
+                        <div class="phn-icon">
+                            <a href="tel:+919001348998"><i class="fas fa-phone"></i></a> 
+                            <div class="call-us">
+                                <p>Call us anytime</p>
+                                <h6>+919001348998</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <<<<about>> -->
+    <div class="container">
+        <div class="row">
+            <div class="container-about">
+                <div class="about col-sm-6">
+                    <h1>
+                        About Our Laundry Service
+                    </h1>
+                    <p class="cleaning">
+                        <i> <b>Welcome to our premium laundry service</b> </i> where we take care of your clothes with
+                        the utmost care
+                        and
+                        precision.
+                        Our team of professionals ensures that your laundry is handled with the highest standards of
+                        cleanliness
+                        and hygiene.
+                        We offer a range of services including washing, drying, ironing, and folding to make your life
+                        easier.
+                    </p>
+                    <div class="quality">
+                        <div class="first-about">
+                            <div class="text-center">
+                                <i class="fas fa-tshirt"></i>
+                                <p>Quality Cleaning</p>
+                            </div>
+                            <div class="text-center">
+                                <i class="fas fa-soap"></i>
+                                <p>Eco-Friendly Products</p>
+                            </div>
+                        </div>
+                        <div class="second-about">
+                            <div class="text-center">
+                                <i class="fas fa-water "></i>
+                                <p>Advanced Technology</p>
+                            </div>
+                            <div class="text-center">
+                                <i class="fa-solid fa-shirt "></i>
+                                <p>Professional Ironing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-img col-sm-6">
+                    <img src="img/9773.jpg"
+                        alt="A modern laundry room with washing machines and dryers neatly arranged, and a basket of freshly folded clothes"
+                        class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <<<<<<timetowork>>>>>>> -->
+    <div class="container-works">
+        <div class="header">
+            <div class="header-text">
+                <h1>
+                    Take back your time.
+                    <br />
+                    Leave the laundry to us.
+                </h1>
+                <a href="#">
+                    How it works →
+                </a>
+            </div>
+            <div class="header-image">
+                <img alt="Happy person surrounded by clean laundry" height="400"
+                    src="img/young-smiling-beautiful-female-walking-with-pink-basin-full-dirty-items-clothes-holding-it-with-both-hands-looks-positive-busy-attractive-housewife-stands-isolated-pink.png"
+                    width="600" />
+            </div>
+        </div>
+        <div class="services">
+            <div class="service">
+                <h3>
+                    <i class="fas fa-shopping-bag">
+                    </i>
+                    Book it &amp; bag it
+                </h3>
+                <p>
+                    Pack your laundry and schedule a pick-up when it suits you.
+                </p>
+            </div>
+            <div class="service">
+                <h3>
+                    <i class="fas fa-hand-sparkles">
+                    </i>
+                    Cleaned with care, locally
+                </h3>
+                <p>
+                    We collect your laundry &amp; carefully clean it at our local facilities.
+                </p>
+            </div>
+            <div class="service">
+                <h3>
+                    <i class="fas fa-truck">
+                    </i>
+                    Free delivery, fresh results
+                </h3>
+                <p>
+                    Relax while we clean and deliver your items fresh to your doorstep.
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-item">
+                <i class="fas fa-shipping-fast">
+                </i>
+                Free collection and delivery
+            </div>
+            <div class="footer-item">
+                <i class="fas fa-heart">
+                </i>
+                24/7 customer support
+            </div>
+            <div class="footer-item">
+                <i class="fas fa-bell">
+                </i>
+                Live order updates
+            </div>
+        </div>
+    </div>
+    <!-- <<<before-about>>>> -->
+    <div class="container">
+        <div class="row">
+            <div class="slider-container-scroll">
+                <div class="image-wrapper">
+                    <img src="img/Stain_free_After.jpg" alt="Before" class="before-image">
+                    <img src="img/Stain_free_banner_1.jpg" alt="After" class="after-image">
+                </div>
+                <h1>Before</h1>
+                <h1><span>After</span></h1>
+                <div class="slider">
+                    <div class="slider-icon">⟷</div>
+                </div>
+                <div class="labels">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <<<servicex>>> -->
+    <div class="container">
+        <div class="row provide">
+            <h4>What We Provide</h4>
+            <h3>Our Services</h3>
+            <div class="col-sm-12 card-services">
+                <div class="col-sm-3 card-service">
+                    <img src="img/dryclean.png.webp" alt="">
+                    <h5>Dry Cleaning</h5>
+                    <p>Dry cleaning uses solvents instead of water to clean clothes, but it can be expensive and has
+                        potential risks.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="col-sm-3 card-service">
+                    <img src="/img/stain-removal.png.webp" alt="">
+                    <h5>Stain Removal</h5>
+                    <p>Don't let stubborn stains ruin your day. Try these effective stain removal tips to keep your
+                        clothes looking like new.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="col-sm-3 card-service">
+                    <img src="img/wash-and-press.png.webp" alt="">
+                    <h5>Wash & Press</h5>
+                    <p>Our wash and press service ensures your clothes come out clean and wrinkle-free, so you can look
+                        your best.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 card-services">
+            <div class="col-sm-3 card-service">
+                <img src="img/wash-and-fold.png.webp" alt="">
+                <h5>Wash & Fold</h5>
+                <p>Save time and enjoy freshly cleaned, neatly folded clothes with our convenient Wash and Fold service.
+                    We handle all types of laundry with care, ensuring they come back to you fresh and organized.</p>
+                <button>Read More</button>
+            </div>
+            <div class="col-sm-3 card-service">
+                <img src="img/shoe-cleaning.png.webp" alt="">
+                <h5>Shoe Cleaning</h5>
+                <p>Keep your shoes looking fresh and spotless with our expert shoe cleaning service. We use high-quality
+                    products and techniques to clean and maintain your shoes</p>
+                <button>Read More</button>
+            </div>
+            <div class="col-sm-3 card-service">
+                <img src="/img/steam-pressing.png.webp" alt="">
+                <h5>Steam Pressing</h5>
+                <p>Achieve wrinkle-free, crisp clothes with our professional steam pressing service. We use advanced
+                    techniques to ensure your garments are perfectly pressed, offering a fresh, polished look</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+   
+
+    <!-- contactform -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Summary Section -->
+            <!-- Right Text Content -->
+            <div class="service-info">
+                <div class="service-info-img">
+                    <img src="/img/rb_2151299093 (2).png" alt="">
+                </div>
+                <h2>Freedom From Stains</h2>
+                <h1>A Service Designed For You</h1>
+                <p>Never worry about staining your favorite shirt. We offer laundry, dry cleaning, and ironing at a
+                    schedule
+                    that fits your lifestyle.</p>
+                    <a href="https://wa.me/+919001348998"> <button class="cta-button">
+                    <span>Schedule Free Pickup</span>
+                </button></a>
+            </div>
+
+            <!-- Contact Form Section -->
+            <div class="col-sm-6">
+                <div class="contact-form">
+                    <h3>Contact Us</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Mobile Number</label>
+                            <input type="text" class="form-control" id="mobile" placeholder="Enter your mobile number">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Send Message</label>
+                            <textarea class="form-control" id="message" rows="4"
+                                placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit btn-block">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bus -->
+    <div class="container-fluid bus">
+        <div class="container">
+            <div class="row">
+                <div class="image-bus">
+                    <img src="/img/rb_2149507152.png" alt="">
+                </div>
+                <h1>Your Clothes, Our Care – On the Fast Track!</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="main-footer">
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-12 footer-bypass footer">
+                    <div class="col-sm-4 footer-service">
+                        <h5>Services</h5>
+                        <a href="dry-cleaning.html">
+                            <li>Dry Cleaning</li>
+                        </a>
+                        <a href="Stain-removal.html">
+                            <li>Stain Removal</li>
+                        </a>
+                        <a href="wash-press.html">
+                            <li>Wash & Press</li>
+                        </a>
+                        <a href="wash-fold.html">
+                            <li>Wash & Fold</li>
+                        </a>
+                        <a href="shoe-cleaning.html">
+                            <li>Shoe Cleaning</li>
+                        </a>
+                        <a href="steam-pressing.html">
+                            <li>Steam Pressing</li>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 footer-service">
+                        <h5>Contact Us</h5>
+                        <a href="mailto:your-email@example.com" class="email-icon">
+                            <i class="fas fa-envelope"></i> <span>Email Us</span>
+                        </a>
+                        <a href="tel:+919001348998" class="phone-icon">
+                            <i class="fas fa-phone"></i> <span>Call Us</span>
+                        </a>
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>3rd floor, shree Gopal tower, Krishna Marg, <br> <span id="scheme">C scheme Jaipur, India </span>
+                            </span>
+                        </div>
+                        <a href="https://wa.me/+919001348998" target="_blank" class="whatsapp-icon">
+                            <i class="fab fa-whatsapp faber"></i>
+                            <span>Chat with us on WhatsApp</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 footer-service">
+                        <img src="img/jaipur_laundry_logo-removebg-preview.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="footer-end">
+                <p>Copyright ©
+                    <label for="" class="Footer-span">2025</label>
+                    <b>Jaipur Laundry</b>
+                    . All Rights Reserved. | Design and Developed By
+                    <a href="">TechBro24</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- <<<<<<<<<<<footerEnd >>>>>>>>>>>> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
