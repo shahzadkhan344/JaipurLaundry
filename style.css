@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     font-family: Arial, sans-serif;
