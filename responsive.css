@@ -7,6 +7,10 @@
         left: 45px;
     }
 
+    .slider-container {
+        height: auto;
+        width: 100%;
+    }
     h5.text {
         margin-left: 0;
     }
