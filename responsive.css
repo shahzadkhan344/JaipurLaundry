@@ -202,6 +202,9 @@
     .images img {
         padding: 10px;
     }
+    .nav {
+        top: 85%;
+    }
 
     .exper {
         height: 90px;
@@ -216,7 +219,7 @@
         height: 196px;
         height: 120px;
         margin-left: 50px;
-        margin-top: 578px;
+        margin-top: 844px;
     }
 
     .text h3 {
