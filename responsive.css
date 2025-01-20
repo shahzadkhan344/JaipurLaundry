@@ -203,7 +203,7 @@
         padding: 10px;
     }
     .nav {
-        top: 85%;
+        display: none;
     }
 
     .exper {
