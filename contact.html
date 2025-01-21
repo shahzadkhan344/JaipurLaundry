@@ -21,6 +21,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
+    <!-- scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <!-- animation  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
     <!-- <<<<<<<<<<<<<css>>>>>>>>>> -->
     <link rel="stylesheet" href="style.css">
@@ -159,74 +163,89 @@
     </div>
 </div>
 
-     <!-- footer -->
-     <div class="main-footer">
-        <div class="container ">
-            <div class="row">
-                <div class="col-sm-12 footer-bypass footer">
-                    <div class="col-sm-4 footer-service">
-                        <h5>Services</h5>
-                        <a href="dry-cleaning.html">
-                            <li>Dry Cleaning</li>
-                        </a>
-                        <a href="Stain-removal.html">
-                            <li>Stain Removal</li>
-                        </a>
-                        <a href="wash-press.html">
-                            <li>Wash & Press</li>
-                        </a>
-                        <a href="wash-fold.html">
-                            <li>Wash & Fold</li>
-                        </a>
-                        <a href="shoe-cleaning.html">
-                            <li>Shoe Cleaning</li>
-                        </a>
-                        <a href="steam-pressing.html">
-                            <li>Steam Pressing</li>
-                        </a>
+  <!-- footer -->
+  <div class="main-footer">
+    <div class="container ">
+        <div class="row">
+            <div class="col-sm-12 footer-bypass footer">
+                <div class="col-sm-4 footer-service">
+                    <h5>Services</h5>
+                    <a href="dry-cleaning.html">
+                        <li>Dry Cleaning</li>
+                    </a>
+                    <a href="Stain-removal.html">
+                        <li>Stain Removal</li>
+                    </a>
+                    <a href="wash-press.html">
+                        <li>Wash & Press</li>
+                    </a>
+                    <a href="wash-fold.html">
+                        <li>Wash & Fold</li>
+                    </a>
+                    <a href="shoe-cleaning.html">
+                        <li>Shoe Cleaning</li>
+                    </a>
+                    <a href="steam-pressing.html">
+                        <li>Steam Pressing</li>
+                    </a>
+                </div>
+                <div class="col-sm-4 footer-service">
+                    <h5>Contact Us</h5>
+                    <a href="mailto:your-email@example.com" class="email-icon">
+                        <i class="fas fa-envelope"></i> <span>Email Us</span>
+                    </a>
+                    <a href="tel:+919001348998" class="phone-icon">
+                        <i class="fas fa-phone"></i> <span>Call Us</span>
+                    </a>
+                    <div class="location-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>3rd floor, shree Gopal tower, Krishna Marg, <br> <span id="scheme">C scheme
+                                Jaipur,
+                                India </span>
+                        </span>
                     </div>
-                    <div class="col-sm-4 footer-service">
-                        <h5>Contact Us</h5>
-                        <a href="mailto:your-email@example.com" class="email-icon">
-                            <i class="fas fa-envelope"></i> <span>Email Us</span>
-                        </a>
-                        <a href="tel:+919001348998" class="phone-icon">
-                            <i class="fas fa-phone"></i> <span>Call Us</span>
-                        </a>
-                        <div class="location-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>3rd floor, shree Gopal tower, Krishna Marg, <br> <span id="scheme">C scheme Jaipur,
-                                    India </span>
-                            </span>
-                        </div>
-                        <a href="https://wa.me/+919001348998" target="_blank" class="whatsapp-icon">
-                            <i class="fab fa-whatsapp faber"></i>
-                            <span>Chat with us on WhatsApp</span>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 footer-service">
-                        <img src="img/jaipur_laundry_logo-removebg-preview.png" alt="">
+                    <a href="https://wa.me/+919001348998" target="_blank" class="whatsapp-icon">
+                        <i class="fab fa-whatsapp faber"></i>
+                        <span>Chat with us on WhatsApp</span>
+                    </a>
+                </div>
+                <div class="col-sm-4 footer-service">
+                    <img src="img/jaipur_laundry_logo-removebg-preview.png" alt="">
 
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="footer-end">
-                <p>Copyright ©
-                    <label for="" class="Footer-span">2025</label>
-                    <b>Jaipur Laundry</b>
-                    . All Rights Reserved. | Design and Developed By
-                    <a href="https://www.techbro24.com/">TechBro24</a>
-                </p>
-            </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="footer-end">
+            <p>Copyright ©
+                <label for="" class="Footer-span">2025</label>
+                <b>Jaipur Laundry</b>
+                . All Rights Reserved. | Design and Developed By
+                <a href="https://www.techbro24.com/">TechBro24</a>
+            </p>
         </div>
     </div>
-    <!-- <<<<<<<<<<<footerEnd >>>>>>>>>>>> -->
-
-    <script src="script.js"></script>
+</div>
+</div>
+<!-- <<<<<<<<<<<footerEnd >>>>>>>>>>>> -->
+<!-- animation -->.
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+AOS.init(); // Initialize AOS
+</script>
+<!-- scroll  -->
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+<script>
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+});
+</script>
+<!-- mainJs -->
+<script src="script.js"></script>
 </body>
 
 </html>
