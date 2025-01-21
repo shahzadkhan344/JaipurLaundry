@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- <<<<---bootstrap link->>>>  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- <<<<---icon-font->>>>  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- animation  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <!-- <<<<<<<<<<<<<css>>>>>>>>>> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+
+        }
+
+        h1 {
+            margin-top: 75px;
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            background-color: #f4f4f4;
+        }
+
+        .tab.active {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .sofa-clean h2 {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        @media (max-width: 600px) {
+
+            th,
+            td {
+                padding: 5px;
+            }
+        }
+
+        .sofa-clean {
+            margin-top: 150px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+
+
+        .price-card {
+            display: flex;
+            gap: 58px;
+        }
+
+        .pricing-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            width: 30%;
+        }
+
+        .pricing-card img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .pricing-card h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .pricing-card p {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+
+        .pricing-card .price {
+            color: #007bff;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            margin-top: 150px;
+            background-color: #fff;
+        }
+
+        .header h2 {
+            font-size: 2em;
+            margin: 0 20px;
+            display: inline-block;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .price-card {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .header {
+                text-align: center;
+            }
+
+            .pricing-card {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+
+
+
+        .section-title {
+            font-size: 1.2em;
+            color: #007bff;
+            margin: 20px 0;
+        }
+
+        .price-card-gst {
+            display: inline-block;
+            width: 200px;
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .price-card-gst i {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .price-card-gst p {
+            margin: 10px 0;
+            font-size: 1em;
+            color: #333;
+        }
+
+        .price-card-gst .price {
+            font-size: 1.2em;
+            color: #007bff;
+        }
+
+        .note {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .price-card-gst {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div data-scroll-container>
+        <!-- Fixed WhatsApp Icon -->
+        <a href="https://wa.me/+919001348998" target="_blank" class="whatsapp-icon-fix">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+
+        <!-- <<<<<<<<<<<<------Navbar->>>>>>>> -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="navbar">
+                    <div class="container">
+                        <div class="logo">
+                            <img src="img/jaipur_laundry_logo-removebg-preview.png" alt="">
+                        </div>
+                        <div class="navbar-items">
+                            <ul class="list-items">
+                                <li><a href="index.html">Home</a></li>
+                                <li>
+                                    <a href="about.html">About
+                                </li>
+                                <li>
+                                    Service <i class="fa navcticn fa-angle-down" aria-hidden="true"></i>
+                                    <ul class="dropdown-service">
+                                        <a href="dry-cleaning.html">
+                                            <li>Dry Cleaning</li>
+                                        </a>
+                                        <a href="Stain-removal.html">
+                                            <li>Stain Removal</li>
+                                        </a>
+                                        <a href="wash-press.html">
+                                            <li>Wash & Press</li>
+                                        </a>
+                                        <a href="wash-fold.html">
+                                            <li>Wash & Fold</li>
+                                        </a>
+                                        <a href="shoe-cleaning.html">
+                                            <li>Shoe Cleaning</li>
+                                        </a>
+                                        <a href="steam-pressing.html">
+                                            <li>Steam Pressing</li>
+                                        </a>
+
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="pricing.html">Pricing</a></li>
+
+                            </ul>
+                            <div class="btn">
+                                <a href="https://wa.me/+919001348998"><button>Book Now</button></a>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Toggle Button -->
+                        <div class="navbar-toggle" id="navbar-toggle">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <<<<<<<<<<<<------NavbarEnd->>>>>>>> -->
+
+        <div class="heading-section-main">
+            <h3>Pricing...</h3>
+        </div>
+
+
+        <div class="container">
+            <h1>Dry Cleaning Prices</h1>
+            <div class="tabs drycleaning-tabs">
+                <div class="tab active" data-tab="men-drycleaning">MEN</div>
+                <div class="tab" data-tab="women-drycleaning">WOMEN</div>
+                <div class="tab" data-tab="household-drycleaning">HOUSEHOLD</div>
+            </div>
+            <!-- drycleaning man   -->
+            <div id="men-drycleaning" class="tab-content active">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Clothes</th>
+                            <th>Basic</th>
+                            <th>Medium</th>
+                            <th>Luxury</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>T-shirt</td>
+                            <td>₹ 149</td>
+                            <td>₹ 179</td>
+                            <td>₹ 199</td>
+                        </tr>
+                        <tr>
+                            <td>Shirt / Polo</td>
+                            <td>₹ 149</td>
+                            <td>₹ 179</td>
+                            <td>₹ 199</td>
+                        </tr>
+                        <tr>
+                            <td>Jeans</td>
+                            <td>₹ 199</td>
+                            <td>₹ 199</td>
+                            <td>₹ 249</td>
+                        </tr>
+                        <tr>
+                            <td>Trouser</td>
+                            <td>₹ 199</td>
+                            <td>₹ 199</td>
+                            <td>₹ 249</td>
+                        </tr>
+                        <tr>
+                            <td>Blazer</td>
+                            <td>₹ 299</td>
+                            <td>₹ 299</td>
+                            <td>₹ 349</td>
+                        </tr>
+                        <tr>
+                            <td>Coat</td>
+                            <td>₹ 299</td>
+                            <td>₹ 299</td>
+                            <td>₹ 349</td>
+                        </tr>
+                        <tr>
+                            <td>Suit 2 Pc</td>
+                            <td>₹ 499</td>
+                            <td>₹ 599</td>
+                            <td>₹ 699</td>
+                        </tr>
+                        <tr>
+                            <td>Suit 3 Pc</td>
+                            <td>₹ 599</td>
+                            <td>₹ 699</td>
+                            <td>₹ 799</td>
+                        </tr>
+                        <tr>
+                            <td>Jacket</td>
+                            <td>₹ 299</td>
+                            <td>₹ 299</td>
+                            <td>₹ 349</td>
+                        </tr>
+                        <tr>
+                            <td>Jacket with Hood</td>
+                            <td>₹ 349</td>
+                            <td>₹ 349</td>
+                            <td>₹ 399</td>
+                        </tr>
+                        <tr>
+                            <td>Jacket Half</td>
+                            <td>₹ 199</td>
+                            <td>₹ 199</td>
+                            <td>₹ 249</td>
+                        </tr>
+                        <tr>
+                            <td>Jacket (Leather/Suede)</td>
+                            <td>₹ 999</td>
+                            <td>₹ 999</td>
+                            <td>₹ 1199</td>
+                        </tr>
+                        <tr>
+                            <td>Pajamas</td>
+                            <td>₹ 149</td>
+                            <td>₹ 149</td>
+                            <td>₹ 199</td>
+                        </tr>
+                        <tr>
+                            <td>Shawls</td>
+                            <td>₹ 199</td>
+                            <td>₹ 199</td>
+                            <td>₹ 249</td>
+                        </tr>
+                        <tr>
+                            <td>Sweater Cardigan</td>
+                            <td>₹ 199</td>
+                            <td>₹ 199</td>
+                            <td>₹ 249</td>
+                        </tr>
+                        <tr>
+                            <td>Overcoat</td>
+                            <td>₹ 499</td>
+                            <td>₹ 599</td>
+                            <td>₹ 699</td>
+                        </tr>
+                        <tr>
+                            <td>Handkerchief</td>
+                            <td>₹ 49</td>
+                            <td>₹ 49</td>
+                            <td>₹ 49</td>
+                        </tr>
+                        <tr>
+                            <td>Shoes (per pair)</td>
+                            <td>₹ 499</td>
+                            <td>₹ 599</td>
+                            <td>₹ 699</td>
+                        </tr>
+                        <tr>
+                            <td>Shoes (Leather/Suede)(per pair)</td>
+                            <td>₹ 999</td>
+                            <td>₹ 999</td>
+                            <td>₹ 1199</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- drycleaning woman   -->
+            <div id="women-drycleaning" class="tab-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Clothes</th>
+                            <th>Basic</th>
+                            <th>Medium</th>
+                            <th>Luxury</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Top</td>
+                            <td>₹ 79</td>
+                            <td>₹ 99</td>
+                            <td>₹ 119</td>
+                        </tr>
+                        <tr>
+                            <td>Shirt / Polo</td>
+                            <td>₹ 99</td>
+                            <td>₹ 149</td>
+                            <td>₹ 199</td>
+                        </tr>
+                        <tr>
+                            <td>Jeans</td>
+                            <td>₹ 120</td>
+                            <td>₹ 120</td>
+                            <td>₹ 120</td>
+                        </tr>
+                        <tr>
+                            <td>Skirt</td>
+                            <td>₹ 99</td>
+                            <td>₹ 149</td>
+                            <td>₹ 199</td>
+                        </tr>
+                        <tr>
+                            <td>Kameez</td>
+                            <td>₹ 119</td>
+                            <td>₹ 149</td>
+                            <td>₹ 199</td>
+                        </tr>
+                        <tr>
+                            <td>Salwar</td>
+                            <td>₹ 79</td>
+                            <td>₹ 99</td>
+                            <td>₹ 119</td>
+                        </tr>
+                        <tr>
+                            <td>Suit 2 Pc</td>
+                            <td>₹ 199</td>
+                            <td>₹ 249</td>
+                            <td>₹ 299</td>
+                        </tr>
+                        <tr>
+                            <td>Suit 3 Pc</td>
+                            <td>₹ 249</td>
+                            <td>₹ 299</td>
+                            <td>₹ 349</td>
+                        </tr>
+                        <tr>
+                            <td>Saree</td>
+                            <td>₹ 299</td>
+                            <td>₹ 399</td>
+                            <td>₹ 999-1499</td>
+                        </tr>
+                        <tr>
+                            <td>Blouse</td>
+                            <td>₹ 79</td>
+                            <td>₹ 119</td>
+                            <td>₹ 199</td>
+                        </tr>
+                        <tr>
+                            <td>Choli</td>
+                            <td>₹ 99</td>
+                            <td>₹ 119</td>
+                            <td>₹ 149</td>
+                        </tr>
+                        <tr>
+                            <td>Lehenga</td>
+                            <td>₹ 499</td>
+                            <td>₹ 999</td>
+                            <td>₹ 1499</td>
+                        </tr>
+                        <tr>
+                            <td>Dupatta</td>
+                            <td>₹ 99</td>
+                            <td>₹ 119</td>
+                            <td>₹ 149</td>
+                        </tr>
+                        <tr>
+                            <td>Half Jacket</td>
+                            <td>₹ 199</td>
+                            <td>₹ 249</td>
+                            <td>₹ 299</td>
+                        </tr>
+                        <tr>
+                            <td>Jacket Hoody</td>
+                            <td>₹ 249</td>
+                            <td>₹ 299</td>
+                            <td>₹ 349</td>
+                        </tr>
+                        <tr>
+                            <td>Scarf</td>
+                            <td>₹ 99</td>
+                            <td>₹ 119</td>
+                            <td>₹ 149</td>
+                        </tr>
+                        <tr>
+                            <td>Shawl</td>
+                            <td>₹ 199</td>
+                            <td>₹ 249</td>
+                            <td>₹ 349</td>
+                        </tr>
+                        <tr>
+                            <td>Pashmina</td>
+                            <td>₹ --</td>
+                            <td>₹ 499</td>
+                            <td>₹ 799</td>
+                        </tr>
+                        <tr>
+                            <td>Stole</td>
+                            <td>₹ 99</td>
+                            <td>₹ 149</td>
+                            <td>₹ 199</td>
+                        </tr>
+                        <tr>
+                            <td>Pant</td>
+                            <td>₹ 120</td>
+                            <td>₹ 120</td>
+                            <td>₹ 120</td>
+                        </tr>
+                        <tr>
+                            <td>Peticoat</td>
+                            <td>₹ 79</td>
+                            <td>₹ 149</td>
+                            <td>₹ 199</td>
+                        </tr>
+                        <tr>
+                            <td>Overcoat</td>
+                            <td>₹ 349</td>
+                            <td>₹ 399</td>
+                            <td>₹ 999</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- drycleaning household   -->
+            <div id="household-drycleaning" class="tab-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Clothes</th>
+                            <th>Basic</th>
+                            <th>Medium</th>
+                            <th>Luxury</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Blanket Single</td>
+                            <td>₹ 349</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Blanket Double</td>
+                            <td>₹ 449</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Quilt Single</td>
+                            <td>₹ 399</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Quilt Double</td>
+                            <td>₹ 499</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Curtain Without Lining Per Panel</td>
+                            <td>₹ 180</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Curtain With Lining Per Panel</td>
+                            <td>₹ 250</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Curtain Valvet Without Lining</td>
+                            <td>₹ 350</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Curtain Valvet With Lining</td>
+                            <td>₹ 450</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Bed Spread Single</td>
+                            <td>₹ 149</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>JBed Spread Double</td>
+                            <td>₹ 249</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Bed Cover Single</td>
+                            <td>₹ 179</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Bed Cover Double</td>
+                            <td>₹ 249</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Bed Sheet Single</td>
+                            <td>₹ 149</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Bed Sheet Double</td>
+                            <td>₹ 199</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Quilt Cover Single</td>
+                            <td>₹ 199</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Quilt Cover Double</td>
+                            <td>₹ 249</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Pillow Cover</td>
+                            <td>₹ 59</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Cushion Cover</td>
+                            <td>₹ 79</td>
+                            <td>₹ 119</td>
+                            <td>₹ 149</td>
+                        </tr>
+                        <tr>
+                            <td>Rug(Dari) Per Square Feet</td>
+                            <td>₹ 20</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Carpet Per Square Feet</td>
+                            <td>₹ 30</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Sofa (Fabric) Per Seat</td>
+                            <td>₹ 299</td>
+                            <td>₹ 349</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Sofa (Leather/Suede)</td>
+                            <td>₹ 599</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Dining Chair</td>
+                            <td>₹ 149</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Big chair</td>
+                            <td>₹ 199</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Bath Towel</td>
+                            <td>₹ 79</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Hand Towel</td>
+                            <td>₹ 49</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Window Curtain Without Lining</td>
+                            <td>₹ 199</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                        <tr>
+                            <td>Window Curtain With Lining</td>
+                            <td>₹ 149</td>
+                            <td>₹ --</td>
+                            <td>₹ --</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <h1>Steam Ironing Prices</h1>
+            <div class="tabs ironing-tabs">
+                <div class="tab active" data-tab="men-ironing">MEN</div>
+                <div class="tab" data-tab="women-ironing">WOMEN</div>
+                <div class="tab" data-tab="household-ironing">HOUSEHOLD</div>
+            </div>
+            <div id="men-ironing" class="tab-content active">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Clothes</th>
+                            <th>Basic</th>
+                            <th>Medium</th>
+                            <th>Luxury</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>T-Shirt</td>
+                            <td>₹44</td>
+                            <td>₹59</td>
+                            <td>₹74</td>
+                        </tr>
+                        <tr>
+                            <td>Shirt / Polo</td>
+                            <td>₹149</td>
+                            <td>₹174</td>
+                            <td>₹199</td>
+                        </tr>
+                        <tr>
+                            <td>Jeans</td>
+                            <td>₹60</td>
+                            <td>₹60</td>
+                            <td>₹60</td>
+                        </tr>
+                        <tr>
+                            <td>Trouser</td>
+                            <td>₹60</td>
+                            <td>₹60</td>
+                            <td>₹60</td>
+                        </tr>
+                        <tr>
+                            <td>Blazer</td>
+                            <td>₹124</td>
+                            <td>₹149</td>
+                            <td>₹174</td>
+                        </tr>
+                        <tr>
+                            <td>Coat</td>
+                            <td>₹99</td>
+                            <td>₹124</td>
+                            <td>₹149</td>
+                        </tr>
+                        <tr>
+                            <td>Suit 2 Pcs</td>
+                            <td>₹149</td>
+                            <td>₹174</td>
+                            <td>₹199</td>
+                        </tr>
+                        <tr>
+                            <td>Suit 3 Pcs</td>
+                            <td>₹199</td>
+                            <td>₹224</td>
+                            <td>₹249</td>
+                        </tr>
+                        <tr>
+                            <td>Jacket</td>
+                            <td>₹124</td>
+                            <td>₹149</td>
+                            <td>₹174</td>
+                        </tr>
+                        <tr>
+                            <td>Jacket with Hood</td>
+                            <td>₹149</td>
+                            <td>₹174</td>
+                            <td>₹199</td>
+                        </tr>
+                        <tr>
+                            <td>Jacket Half</td>
+                            <td>₹99</td>
+                            <td>₹124</td>
+                            <td>₹149</td>
+                        </tr>
+                        <tr>
+                            <td>Pyjama</td>
+                            <td>₹39</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>Sherwani</td>
+                            <td>₹249</td>
+                            <td>₹499</td>
+                            <td>₹749</td>
+                        </tr>
+                        <tr>
+                            <td>Sweater Cardigan</td>
+                            <td>₹74</td>
+                            <td>₹99</td>
+                            <td>₹124</td>
+                        </tr>
+                        <tr>
+                            <td>Overcoat</td>
+                            <td>₹149</td>
+                            <td>₹249</td>
+                            <td>₹499</td>
+                        </tr>
+                        <tr>
+                            <td>Handkerchief</td>
+                            <td>₹14</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="women-ironing" class="tab-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Clothes</th>
+                            <th>Basic</th>
+                            <th>Medium</th>
+                            <th>Luxury</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Top</td>
+                            <td>₹ 49</td>
+                            <td>₹ 149</td>
+                            <td>₹ 59</td>
+                        </tr>
+                        <tr>
+                            <td>Shirt / Polo</td>
+                            <td>₹ 49</td>
+                            <td>₹ 74</td>
+                            <td>₹ 99</td>
+                        </tr>
+                        <tr>
+                            <td>Jeans</td>
+                            <td>₹ 60</td>
+                            <td>₹ 60</td>
+                            <td>₹ 60</td>
+                        </tr>
+                        <tr>
+                            <td>Skirt</td>
+                            <td>₹ 49</td>
+                            <td>₹ 74</td>
+                            <td>₹ 99</td>
+                        </tr>
+                        <tr>
+                            <td>Kameez</td>
+                            <td>₹ 59</td>
+                            <td>₹ 74</td>
+                            <td>₹ 99</td>
+                        </tr>
+                        <tr>
+                            <td>Salwar</td>
+                            <td>₹ 39</td>
+                            <td>₹ 49</td>
+                            <td>₹ 59</td>
+                        </tr>
+                        <tr>
+                            <td>Suit 2 Pcs</td>
+                            <td>₹ 99</td>
+                            <td>₹ 124</td>
+                            <td>₹ 149</td>
+                        </tr>
+                        <tr>
+                            <td>Suit 3 Pcs</td>
+                            <td>₹ 124</td>
+                            <td>₹ 149</td>
+                            <td>₹ 174</td>
+                        </tr>
+                        <tr>
+                            <td> Saree</td>
+                            <td>₹ 149</td>
+                            <td>₹ 199</td>
+                            <td>₹ 499-749</td>
+                        </tr>
+                        <tr>
+                            <td>Blouse</td>
+                            <td>₹ 39</td>
+                            <td>₹ 59</td>
+                            <td>₹ 99</td>
+                        </tr>
+                        <tr>
+                            <td>Choli</td>
+                            <td>₹ 49</td>
+                            <td>₹ 59</td>
+                            <td>₹ 74</td>
+                        </tr>
+                        <tr>
+                            <td>Lehenga</td>
+                            <td>₹ 249</td>
+                            <td>₹ 499</td>
+                            <td>₹ 749</td>
+                        </tr>
+                        <tr>
+                            <td>Dupatta</td>
+                            <td>₹ 49</td>
+                            <td>₹ 59</td>
+                            <td>₹ 74</td>
+                        </tr>
+                        <tr>
+                            <td>Half Jacket</td>
+                            <td>₹ 99</td>
+                            <td>₹ 124</td>
+                            <td>₹ 149</td>
+                        </tr>
+                        <tr>
+                            <td>Jacket Hoody</td>
+                            <td>₹ 124</td>
+                            <td>₹ 149</td>
+                            <td>₹ 174</td>
+                        </tr>
+                        <tr>
+                            <td>Scarf</td>
+                            <td>₹ 49</td>
+                            <td>₹ 59</td>
+                            <td>₹ 74</td>
+                        </tr>
+                        <tr>
+                            <td>Shawl</td>
+                            <td>₹ 99</td>
+                            <td>₹ 124</td>
+                            <td>₹ 174</td>
+                        </tr>
+                        <tr>
+                            <td>Pashmina</td>
+                            <td>--</td>
+                            <td>₹ 249</td>
+                            <td>₹ 399</td>
+                        </tr>
+                        <tr>
+                            <td>Stole</td>
+                            <td>₹ 49</td>
+                            <td>₹ 74</td>
+                            <td>₹ 99</td>
+                        </tr>
+                        <tr>
+                            <td>Pant</td>
+                            <td>₹ 60</td>
+                            <td>₹ 60</td>
+                            <td>₹ 60</td>
+                        </tr>
+                        <tr>
+                            <td>Petticoat</td>
+                            <td>₹ 39</td>
+                            <td>₹ 74</td>
+                            <td>₹ 99</td>
+                        </tr>
+                        <tr>
+                            <td>Overcoat</td>
+                            <td>₹ 174</td>
+                            <td>₹ 199</td>
+                            <td>₹ 499</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="household-ironing" class="tab-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Clothes</th>
+                            <th>Basic</th>
+                            <th>Medium</th>
+                            <th>Luxury</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Blanket Single</td>
+                            <td>₹ 174</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>Blanket Double</td>
+                            <td>₹ 124</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>Quilt Single</td>
+                            <td>₹ 199</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>Quilt Double</td>
+                            <td>₹ 249</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>Curtain Without Lining Per Panel</td>
+                            <td>₹ 90</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>Curtain With Lining Per Panel</td>
+                            <td>₹ 125</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>Curtain Valvet Without Lining</td>
+                            <td>₹ 175</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>Curtain Valvet With Lining</td>
+                            <td>₹ 225</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>Bed Spread Single</td>
+                            <td>₹ 74</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>Bed Spread Double</td>
+                            <td>₹ 124</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>Bed Cover Single</td>
+                            <td>₹ 89</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>Bed Cover Double</td>
+                            <td>₹ 124</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>Bed Sheet Single</td>
+                            <td>₹ 74</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>Bed Sheet Double</td>
+                            <td>₹ 199</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>Quilt Cover Single</td>
+                            <td>₹ 199</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>Quilt Cover Double</td>
+                            <td>₹ 124</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>Pillow Cover</td>
+                            <td>₹ 29</td>
+                            <td>₹ 44</td>
+                            <td>₹ 59</td>
+                        </tr>
+                        <tr>
+                            <td>Cushion Cover</td>
+                            <td>₹ 39</td>
+                            <td>₹ 59</td>
+                            <td>₹ 74</td>
+                        </tr>
+                        <tr>
+                            <td>Rug(Dari) Per Square Feet</td>
+                            <td>₹ 10</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>Carpet Per Square Feet</td>
+                            <td>₹ 15</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>Bath Towel</td>
+                            <td>₹ 39</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <td>Hand Towel</td>
+                            <td>₹ 24</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="container sofa-clean">
+            <h2>Sofa Cleaning Prices</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Items</th>
+                        <th>Basic</th>
+                        <th>Medium</th>
+                        <th>Luxury</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sofa (Fabric)</td>
+                        <td>₹ 299</td>
+                        <td>₹ 399</td>
+                        <td>₹ 499</td>
+                    </tr>
+                    <tr>
+                        <td>Sofa (Leather)</td>
+                        <td>₹ 599</td>
+                        <td>₹ 649</td>
+                        <td>₹ 799</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container sofa-clean">
+            <h2>Curtain Cleaning Prices</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Items</th>
+                        <th>Basic</th>
+                        <th>Medium</th>
+                        <th>Luxury</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Curtains (Sheers)</td>
+                        <td>₹ 180</td>
+                        <td>₹ 220</td>
+                        <td>₹ 250</td>
+                    </tr>
+                    <tr>
+                        <td>Curtains (Cotton) Without Lining</td>
+                        <td>₹ 200</td>
+                        <td>₹ 250</td>
+                        <td>₹ 350</td>
+                    </tr>
+                    <tr>
+                        <td>Curtains (Cotton) With Lining</td>
+                        <td>₹ 250</td>
+                        <td>₹ 350</td>
+                        <td>₹ 450</td>
+                    </tr>
+                    <tr>
+                        <td>Curtains (Velvet) With Lining</td>
+                        <td>₹ 450</td>
+                        <td>₹ 550</td>
+                        <td>₹ 650</td>
+                    </tr>
+                    <tr>
+                        <td>Window Curtains Without Lining</td>
+                        <td>₹ 149</td>
+                        <td>₹ 199</td>
+                        <td>₹ 249</td>
+                    </tr>
+                    <tr>
+                        <td>Window Curtains With Lining</td>
+                        <td>₹ 199</td>
+                        <td>₹ 249</td>
+                        <td>₹ 299</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container sofa-clean">
+            <h2>Sofa Cleaning Prices</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Items</th>
+                        <th>Basic</th>
+                        <th>Medium</th>
+                        <th>Luxury</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Shoes (Sneakers)</td>
+                        <td>₹ 299</td>
+                        <td>₹ 599</td>
+                        <td>₹ 799</td>
+                    </tr>
+                    <tr>
+                        <td>Shoes (Suede /Leather)</td>
+                        <td>₹ 499</td>
+                        <td>₹ 799</td>
+                        <td>₹ 999/1499</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container sofa-clean">
+            <h2>Accessory Cleaning Prices</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Items</th>
+                        <th>Basic</th>
+                        <th>Medium</th>
+                        <th>Luxury</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bags</td>
+                        <td>₹ 299</td>
+                        <td>₹ 499</td>
+                        <td>₹ 999</td>
+                    </tr>
+                    <tr>
+                        <td>Handbags (Women)</td>
+                        <td>₹ 399</td>
+                        <td>₹ 699</td>
+                        <td>₹ 999</td>
+                    </tr>
+                    <tr>
+                        <td>Suitcase</td>
+                        <td>₹ 399</td>
+                        <td>₹ 699</td>
+                        <td>₹ 999</td>
+                    </tr>
+                    <tr>
+                        <td>Soft Toys</td>
+                        <td>₹ 299</td>
+                        <td>₹ 499</td>
+                        <td>₹ 999</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="header">
+            <h2>
+                Wash &amp; Iron Price
+            </h2>
+            <h2>
+                Wash &amp; Fold Price
+            </h2>
+            <h2>
+                Premium Laundry
+            </h2>
+        </div>
+        <div class="container price-card">
+            <div class="pricing-card">
+                <img alt="Icon of a washing machine and iron" height="50"
+                    src="https://storage.googleapis.com/a1aa/image/2vh2zR2G2oq4PZAbgAx2y5Bn5tTk0eEdvPMgT7HWMfbpqTHUA.jpg"
+                    width="50" />
+                <h3>
+                    Wash &amp; Iron
+                </h3>
+                <p class="price">
+                    ₹ 93 per Kg
+                </p>
+            </div>
+            <div class="pricing-card">
+                <img alt="Icon of folded clothes" height="50"
+                    src="https://storage.googleapis.com/a1aa/image/P4RoDp0Vz3ZGNpkKEivQCHOXXVEkDAfUPb5lfGmNUqUmqTHUA.jpg"
+                    width="50" />
+                <h3>
+                    Wash &amp; Fold
+                </h3>
+                <p class="price">
+                    ₹ 76 per Kg
+                </p>
+            </div>
+            <div class="pricing-card">
+                <img alt="Icon of a laundry basket with bubbles" height="50"
+                    src="https://storage.googleapis.com/a1aa/image/zerfnmg0MNrP2ENZpXajy5xLNdfxR7PmTe2QTXGwXlciqOdQB.jpg"
+                    width="50" />
+                <h3>
+                    Premium Laundry
+                </h3>
+                <p class="price">
+                    ₹ 150 per Kg
+                </p>
+            </div>
+        </div>
+
+        <div class="container sofa-clean">
+            <h2>Carpet Cleaning Price</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Items</th>
+                        <th>Basic</th>
+                        <th>Medium</th>
+                        <th>Luxury</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Carpet (Per Sqft)</td>
+                        <td>₹ 35</td>
+                        <td>₹ 45</td>
+                        <td>₹ 60</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="container">
+                <h1>Express Laundry Prices</h1>
+                <div class="section-title">1) Express Wash and Fold Prices:</div>
+                <div class="price-card-gst">
+                    <i class="fas fa-truck"></i>
+                    <p>Same day delivery</p>
+                    <p class="price">â‚¹152 per Kg</p>
+                </div>
+                <div class="price-card-gst">
+                    <i class="fas fa-clock"></i>
+                    <p>Next day delivery</p>
+                    <p class="price">â‚¹114 per Kg</p>
+                </div>
+                <div class="section-title">2) Express Wash and Iron Prices:</div>
+                <div class="price-card-gst">
+                    <i class="fas fa-truck"></i>
+                    <p>Same day delivery</p>
+                    <p class="price">â‚¹186 per Kg</p>
+                </div>
+                <div class="price-card-gst">
+                    <i class="fas fa-clock"></i>
+                    <p>Next day delivery</p>
+                    <p class="price">â‚¹140 per Kg</p>
+                </div>
+                <div class="section-title">3) Express Premium Laundry Prices:</div>
+                <div class="price-card-gst">
+                    <i class="fas fa-truck"></i>
+                    <p>Same day delivery</p>
+                    <p class="price">â‚¹300 per Kg</p>
+                </div>
+                <div class="price-card-gst">
+                    <i class="fas fa-clock"></i>
+                    <p>Next day delivery</p>
+                    <p class="price">â‚¹225 per Kg</p>
+                </div>
+                <div class="note">Note: 18% GST Applicable Extra</div>
+            </div>
+</body>
+
+</html>
+
+<!-- footer -->
+<div class="main-footer">
+    <div class="container ">
+        <div class="row">
+            <div class="col-sm-12 footer-bypass footer">
+                <div class="col-sm-4 footer-service">
+                    <h5>Services</h5>
+                    <a href="dry-cleaning.html">
+                        <li>Dry Cleaning</li>
+                    </a>
+                    <a href="Stain-removal.html">
+                        <li>Stain Removal</li>
+                    </a>
+                    <a href="wash-press.html">
+                        <li>Wash & Press</li>
+                    </a>
+                    <a href="wash-fold.html">
+                        <li>Wash & Fold</li>
+                    </a>
+                    <a href="shoe-cleaning.html">
+                        <li>Shoe Cleaning</li>
+                    </a>
+                    <a href="steam-pressing.html">
+                        <li>Steam Pressing</li>
+                    </a>
+                </div>
+                <div class="col-sm-4 footer-service">
+                    <h5>Contact Us</h5>
+                    <a href="mailto:your-email@example.com" class="email-icon">
+                        <i class="fas fa-envelope"></i> <span>Email Us</span>
+                    </a>
+                    <a href="tel:+919001348998" class="phone-icon">
+                        <i class="fas fa-phone"></i> <span>Call Us</span>
+                    </a>
+                    <div class="location-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>3rd floor, shree Gopal tower, Krishna Marg, <br> <span id="scheme">C scheme
+                                Jaipur,
+                                India </span>
+                        </span>
+                    </div>
+                    <a href="https://wa.me/+919001348998" target="_blank" class="whatsapp-icon">
+                        <i class="fab fa-whatsapp faber"></i>
+                        <span>Chat with us on WhatsApp</span>
+                    </a>
+                </div>
+                <div class="col-sm-4 footer-service">
+                    <img src="img/jaipur_laundry_logo-removebg-preview.png" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="footer-end">
+            <p>Copyright ©
+                <label for="" class="Footer-span">2025</label>
+                <b>Jaipur Laundry</b>
+                . All Rights Reserved. | Design and Developed By
+                <a href="https://www.techbro24.com/">TechBro24</a>
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+<!-- <<<<<<<<<<<footerEnd >>>>>>>>>>>> -->
+<!-- animation -->.
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1200 // Duration of animations in milliseconds
+    }); 
+</script>
+
+<!-- mainJs -->
+<script src="script.js"></script>
+
+<!-- section -->
+
+<script>
+    // Dry Cleaning Tabs
+    document.querySelectorAll('.drycleaning-tabs .tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            document.querySelectorAll('.drycleaning-tabs .tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+            tab.classList.add('active');
+            document.getElementById(tab.getAttribute('data-tab')).classList.add('active');
+        });
+    });
+
+    // Steam Ironing Tabs
+    document.querySelectorAll('.ironing-tabs .tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            document.querySelectorAll('.ironing-tabs .tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+            tab.classList.add('active');
+            document.getElementById(tab.getAttribute('data-tab')).classList.add('active');
+        });
+    });
+</script>
+</body>
+
+</html>

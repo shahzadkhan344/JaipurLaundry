@@ -23,18 +23,9 @@
         margin-right: 0;
     }
 
-    .exper {
-        margin-top: -347px;
-        margin-left: -16px;
-        height: 92px;
-        width: 119px;
-    }
+   
 
-    #images-img2 {
-        margin-left: 186px;
-        margin-top: 249px;
-        height: 151px;
-    }
+ 
 
     .images img {
         padding-top: 80px;
@@ -106,7 +97,7 @@
     .list-items {
         flex-direction: column;
         gap: 0px;
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     .dropdown-service {
