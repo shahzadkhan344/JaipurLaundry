@@ -3,24 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Smooth scrolling for the entire page */
 html {
     scroll-behavior: smooth;
 }
 
-body, html {
+body,
+html {
     overflow-x: hidden;
 }
 
 /* For animated elements, ensure consistent width */
 .animated-element {
-    width: 100%; /* Ensure it does not exceed the container width */
-    max-width: 100%; /* Prevent scaling beyond its parent */
+    width: 100%;
+    /* Ensure it does not exceed the container width */
+    max-width: 100%;
+    /* Prevent scaling beyond its parent */
 }
 
 /* Use transform for animations */
 [data-aos] {
-    will-change: transform, opacity; /* Optimize animations */
+    will-change: transform, opacity;
+    /* Optimize animations */
 }
 
 body {
@@ -155,6 +160,7 @@ li a:hover {
     font-weight: 600;
     margin-bottom: 56px;
 }
+
 .btn button:hover {
     background-color: #007bff;
 }
@@ -705,7 +711,7 @@ button:hover {
 
 .text {
     background-image: url(/img/dummy-shape.png);
-    padding: 90px 90px 0 90px ;
+    padding: 90px 90px 0 90px;
 }
 
 .text p {
@@ -768,8 +774,9 @@ button:hover {
     background-color: #1687A7;
     color: #ffffff;
     border: none;
-    transition: 0.5s ease-in-out ;
+    transition: 0.5s ease-in-out;
 }
+
 .btn-icon button:hover {
     background-color: #ffffff;
     color: #007bff;
@@ -799,7 +806,7 @@ button:hover {
 
 .container-about {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     margin-top: 100px;
     gap: 20px;
 }
@@ -810,13 +817,13 @@ button:hover {
 }
 
 .about-img {
-    flex: 1; 
+    flex: 1;
 }
 
 .about-img img {
     height: auto;
-    width: 100%; 
-    object-fit: cover; 
+    width: 100%;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     margin-top: 36px;
@@ -840,6 +847,7 @@ button:hover {
     justify-content: space-around;
     margin-bottom: 20px;
 }
+
 .second-about {
     margin-right: 17px;
 }
@@ -860,30 +868,40 @@ button:hover {
 }
 
 .card-services {
-    justify-content: space-between; /* Equal spacing between cards */
+    justify-content: space-between;
+    /* Equal spacing between cards */
     text-align: center;
     align-items: center;
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping for responsiveness */
-    gap: 20px; /* Space between the cards */
+    flex-wrap: wrap;
+    /* Allow wrapping for responsiveness */
+    gap: 20px;
+    /* Space between the cards */
     margin-top: 40px;
 }
 
 .card-service {
-    flex: 0 1 30%; /* Each card takes 30% of the width */
-    max-width: 30%; /* Prevents the cards from growing too large */
+    flex: 0 1 30%;
+    /* Each card takes 30% of the width */
+    max-width: 30%;
+    /* Prevents the cards from growing too large */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px; /* Adds rounded corners to the cards */
+    border-radius: 10px;
+    /* Adds rounded corners to the cards */
     padding: 20px;
     transition: 0.5s ease-out;
-    background-color: #fff; /* Background for each card */
+    background-color: #fff;
+    /* Background for each card */
 }
 
 .card-service img {
-    height: 150px; /* Fixed height for the images */
+    height: 150px;
+    /* Fixed height for the images */
     width: 100%;
-    object-fit: contain; /* Maintain image proportions */
-    margin-bottom: 15px; /* Space between the image and the content */
+    object-fit: contain;
+    /* Maintain image proportions */
+    margin-bottom: 15px;
+    /* Space between the image and the content */
 }
 
 .card-service h5 {
@@ -897,7 +915,8 @@ button:hover {
     font-size: 14px;
     color: #02044c;
     margin: 10px 0;
-    line-height: 1.5; /* Better readability */
+    line-height: 1.5;
+    /* Better readability */
 }
 
 .card-service button {
@@ -918,7 +937,8 @@ button:hover {
 }
 
 .card-service:hover {
-    transform: scale(1.05); /* Add scaling effect on hover */
+    transform: scale(1.05);
+    /* Add scaling effect on hover */
 }
 
 .provide {
@@ -964,7 +984,8 @@ button:hover {
 }
 
 .contact-form {
-    background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);;
+    background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+    ;
     box-shadow: 5px 4px #3030dd;
     margin-top: 70px;
 }
@@ -1067,25 +1088,33 @@ button:hover {
 /* General Footer Styles */
 .main-footer {
     background: url(img/rb_3925-removebg-preview.png);
-    background-size: cover; /* Ensure the background covers the container */
-    background-position: center; /* Center the background */
-    padding: 40px 20px; /* Add padding for spacing */
+    background-size: cover;
+    /* Ensure the background covers the container */
+    background-position: center;
+    /* Center the background */
+    padding: 40px 20px;
+    /* Add padding for spacing */
     color: #02044c;
 }
 
 .footer-bypass {
     display: flex;
-    justify-content: space-between; /* Space between columns */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-between;
+    /* Space between columns */
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
     margin-top: 100px;
-    gap: 30px; /* Add spacing between columns */
+    gap: 30px;
+    /* Add spacing between columns */
 }
 
 .footer-service {
-    flex: 0 1 30%; /* Default to 30% width per column */
+    flex: 0 1 30%;
+    /* Default to 30% width per column */
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Add spacing between items in each column */
+    gap: 15px;
+    /* Add spacing between items in each column */
 }
 
 .footer-service h5 {
@@ -1101,24 +1130,28 @@ button:hover {
     list-style: none;
     font-size: 14px;
     color: #02044c;
-    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth hover effect */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    /* Smooth hover effect */
 }
 
 .footer-service a:hover {
     text-decoration: underline;
-    color: #d9a32c; /* Highlight color on hover */
+    color: #d9a32c;
+    /* Highlight color on hover */
 }
 
 .footer-service img {
     height: 300px;
-    width: 100%; /* Make the image responsive */
+    width: 100%;
+    /* Make the image responsive */
     object-fit: contain;
     margin-top: -20px;
 }
 
 .location-icon {
     display: flex;
-    align-items: flex-start; /* Align icon and text properly */
+    align-items: flex-start;
+    /* Align icon and text properly */
     gap: 8px;
     color: #02044c;
     font-size: 14px;
@@ -1143,7 +1176,8 @@ button:hover {
 .fa-map-marker-alt {
     font-size: 19px;
     margin-right: 10px;
-    color: #090965; /* Green for WhatsApp */
+    color: #090965;
+    /* Green for WhatsApp */
 }
 
 .fa-phone {
@@ -1178,35 +1212,47 @@ button:hover {
 /* Scroll to Top Button */
 .scroll-to-top {
     position: fixed;
-    bottom: 20px; /* Distance from the bottom */
-    right: 20px; /* Distance from the right */
+    bottom: 20px;
+    /* Distance from the bottom */
+    right: 20px;
+    /* Distance from the right */
     width: 50px;
     height: 50px;
-    background-color: #d9a32c; /* Button background color */
-    color: #fff; /* Icon color */
-    border-radius: 50%; /* Make the button circular */
+    background-color: #d9a32c;
+    /* Button background color */
+    color: #fff;
+    /* Icon color */
+    border-radius: 50%;
+    /* Make the button circular */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 18px;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth show/hide effect */
-    opacity: 0; /* Initially hidden */
-    visibility: hidden; /* Make it invisible */
-    z-index: 1000; /* Ensure it appears above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add shadow for depth */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Smooth show/hide effect */
+    opacity: 0;
+    /* Initially hidden */
+    visibility: hidden;
+    /* Make it invisible */
+    z-index: 1000;
+    /* Ensure it appears above other elements */
 }
 
 /* Show the button when the user scrolls down */
 .scroll-to-top.visible {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0); /* Reset transform */
+    transform: translateY(0);
+    /* Reset transform */
 }
 
 /* Hover effect */
 .scroll-to-top:hover {
-    background-color: #72531c; /* Darker color on hover */
+    background-color: #72531c;
+    /* Darker color on hover */
 }
 
 /* Icon Styling */
@@ -1218,27 +1264,39 @@ button:hover {
 /* Fixed WhatsApp Icon Styling */
 .whatsapp-icon-fix {
     position: fixed;
-    bottom: 78px; /* Distance from the bottom of the screen */
-    right: 20px; /* Distance from the right of the screen */
-    width: 60px; /* Icon size */
+    bottom: 78px;
+    /* Distance from the bottom of the screen */
+    right: 20px;
+    /* Distance from the right of the screen */
+    width: 60px;
+    /* Icon size */
     height: 60px;
-    background-color: #25d366; /* WhatsApp green color */
+    background-color: #25d366;
+    /* WhatsApp green color */
     color: white;
-    border-radius: 50%; /* Circular shape */
+    border-radius: 50%;
+    /* Circular shape */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px; /* Icon size */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    z-index: 1000; /* Ensure it stays above other elements */
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
-    text-decoration: none; /* Remove underline for the link */
+    font-size: 30px;
+    /* Icon size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+    z-index: 1000;
+    /* Ensure it stays above other elements */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    /* Smooth hover effect */
+    text-decoration: none;
+    /* Remove underline for the link */
 }
 
 /* Hover Effect */
 .whatsapp-icon-fix:hover {
-    transform: scale(1.2); /* Slightly enlarge on hover */
-    background-color: #128c7e; /* Darker green on hover */
+    transform: scale(1.2);
+    /* Slightly enlarge on hover */
+    background-color: #128c7e;
+    /* Darker green on hover */
 }
 
 /* Responsive Adjustments */
@@ -1266,4 +1324,128 @@ button:hover {
     font-weight: 600;
     color: white;
     font-size: 33px;
+}
+
+
+.header-price {
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.header-price h6 {
+    font-weight: 600;
+    color: #007bff;
+}
+
+.header-price h1 {
+    font-size: 36px;
+    line-height: 1.4;
+    font-family: fantasy;
+    color: #005dae;
+}
+
+.header-price p {
+    font-size: 16px;
+    color: #007f9a;
+}
+
+.pricing-plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 1s ease;
+    margin-bottom: 30px;
+}
+
+.plan img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.plan h3 {
+    font-size: 19px;
+    color: #333;
+    margin-bottom: 3px;
+    transition: transform 1s ease, opacity 1s ease;
+    font-weight: 600;
+}
+
+.plan p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.plan .price {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.plan .price span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.plan .book-now {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    height: 57px;
+    border: none;
+    cursor: pointer;
+    transition: bottom 1s ease;
+}
+
+.plan:hover img {
+    transform: translateY(-110px);
+    opacity: 0.5;
+}
+
+.plan:hover h3 {
+    transform: translateY(-50px);
+    opacity: 1;
+}
+
+.plan:hover p {
+    transform: translateY(-50px);
+    opacity: 1;
+}
+
+.plan:hover .price {
+    transform: translateY(-50px);
+    opacity: 1;
+}
+
+.plan:hover .book-now {
+    bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .pricing-plans {
+        flex-direction: column;
+        align-items: center;
+    }
 }
