@@ -92,13 +92,17 @@ body {
     margin-top: -40px;
 }
 
-li a {
+li a, #destinationDropdown {
     text-decoration: none;
     color: #1687A7;
     transition: color 0.3s ease;
     line-height: 1;
-    font-weight: 600;
+    font-weight: 600 !important;
 }
+#destinationDropdown{
+    line-height: 1.5;
+}
+
 
 li a:hover {
     text-decoration: underline;
