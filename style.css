@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Smooth scrolling for the entire page */
 html {
     scroll-behavior: smooth;
 }
@@ -14,18 +13,13 @@ html {
     overflow-x: hidden;
 }
 
-/* For animated elements, ensure consistent width */
 .animated-element {
     width: 100%;
-    /* Ensure it does not exceed the container width */
     max-width: 100%;
-    /* Prevent scaling beyond its parent */
 }
 
-/* Use transform for animations */
 [data-aos] {
     will-change: transform, opacity;
-    /* Optimize animations */
 }
 
 body {
@@ -42,9 +36,9 @@ body {
     top: -10px;
     left: 0;
     width: 100%;
-    height: 95px;
+    height: 85px;
     z-index: 1000;
-    padding: 10px 0;
+    padding: 0px 0;
     border-bottom: 1px solid #72531c;
 }
 
@@ -71,8 +65,7 @@ body {
 
 /* Slide animation for navbar-items */
 .navbar-items {
-    left: -100%;
-    /* Initially hidden */
+    margin-left: 120px;
     transition: left 0.3s ease-in-out;
     /* Smooth slide effect */
 }
@@ -86,21 +79,24 @@ body {
 .list-items {
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 30px;
     margin: 0;
-    margin-right: 100px;
+    margin-right: 22px;
     margin-top: -40px;
 }
 
-li a, #destinationDropdown {
+li a,
+#destinationDropdown {
     text-decoration: none;
     color: #1687A7;
     transition: color 0.3s ease;
     line-height: 1;
     font-weight: 600 !important;
 }
-#destinationDropdown{
+
+#destinationDropdown {
     line-height: 1.5;
+    margin-left: -42px;
 }
 
 
@@ -169,6 +165,12 @@ li a:hover {
     background-color: #007bff;
 }
 
+.navbar .phone-icon {
+    margin-bottom: 55px;
+    color: black;
+    text-decoration: none;
+}
+
 .slider-container {
     position: relative;
     height: 695px;
@@ -179,7 +181,6 @@ li a:hover {
 .slides {
     display: flex;
     width: 100%;
-    /* 100% for each slide × 2 slides */
     transition: transform 0.5s ease-in-out;
 }
 
@@ -194,7 +195,7 @@ li a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin-top: 80px;
+    margin-top: 75px;
 }
 
 .slide::before {
@@ -495,7 +496,7 @@ button:hover {
 
 .service-info h1 {
     font-size: 28px;
-    color: #212529;
+    color: #34679b;
     margin-bottom: 16px;
 }
 
@@ -510,7 +511,7 @@ button:hover {
     position: relative;
     display: inline-block;
     padding: 12px 20px;
-    background-color: #02044c;
+    background-color: #2977dd;
     /* Initial button color */
     color: white;
     text-transform: uppercase;
@@ -622,7 +623,7 @@ button:hover {
 
 
 .header-text a {
-    color: #276678;
+    color: #1a1a1a;
     text-decoration: none;
     font-size: 18px;
 }
@@ -659,7 +660,7 @@ button:hover {
 }
 
 .service p {
-    color: #276678;
+    color: #1c1d1d;
     font-size: 16px;
     margin: 0;
 }
@@ -677,6 +678,10 @@ button:hover {
     margin: 0 10px;
     display: flex;
     align-items: center;
+}
+
+.footer-item span {
+    color: #1a1a1a;
 }
 
 .footer-item i {
@@ -721,7 +726,7 @@ button:hover {
 .text p {
     font-size: 18px;
     font-family: emoji;
-    color: #1687A7;
+    color: #000000;
     margin-top: 30px;
 }
 
@@ -733,7 +738,7 @@ button:hover {
 
 .text h3 {
     font-size: 2rem;
-    color: #276678;
+    color: #2d8ba5;
     font-weight: 600;
 }
 
@@ -842,7 +847,7 @@ button:hover {
 
 .about p {
     line-height: 1.6;
-    color: #276678;
+    color: #1d1d1df1;
 }
 
 .first-about,
@@ -1339,19 +1344,21 @@ button:hover {
 
 .header-price h6 {
     font-weight: 600;
-    color: #007bff;
+    color: #000000;
 }
 
 .header-price h1 {
     font-size: 36px;
     line-height: 1.4;
-    font-family:sans-serif;
-    color: #005dae;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #307cbe;
 }
 
 .header-price p {
     font-size: 16px;
-    color: #007f9a;
+    color: #181818cb;
+    font-weight: 600;
 }
 
 .pricing-plans {
@@ -1447,9 +1454,24 @@ button:hover {
     bottom: 20px;
 }
 
+/* Mobile View - Slider */
 @media (max-width: 768px) {
     .pricing-plans {
-        flex-direction: column;
-        align-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .plan {
+        flex: 0 0 80%;
+        margin-left: 39px;
+        scroll-snap-align: center;
+    }
+
+    .main {
+        margin-left: 4129px;
     }
 }

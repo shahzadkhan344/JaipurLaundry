@@ -125,3 +125,66 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
+
+
+
+
+const pricingPlansContainer = document.querySelector('.pricing-plans');
+const plans = document.querySelectorAll('.plan');
+
+let currentindex = 0;
+
+function isMobile() {
+    return window.innerWidth <= 768;
+}
+
+// Scroll to a specific slide
+function scrollToSlide(index) {
+    const planWidth = plans[0].offsetWidth + 20;
+    pricingPlansContainer.scrollTo({
+        left: index * planWidth,
+        behavior: 'smooth',
+    });
+}
+
+function autoScroll() {
+    if (isMobile()) {
+        currentindex = (currentindex + 1) % plans.length;
+        scrollToSlide(currentindex);
+    }
+}
+
+// Remove reset logic during auto-scroll
+function resetSlider() {
+    // Only reset if mobile
+    if (isMobile()) {
+        currentindex = 0;
+        scrollToSlide(currentindex);
+    }
+}
+
+// Resize event
+window.addEventListener('resize', () => {
+    if (!isMobile()) {
+        pricingPlansContainer.style.overflowX = 'unset'; // Disable scrolling on desktop view
+        currentindex = 0; // Reset on desktop
+    } else {
+        pricingPlansContainer.style.overflowX = 'auto'; // Enable scrolling on mobile view
+        resetSlider();
+    }
+});
+
+window.addEventListener('load', () => {
+    if (!isMobile()) {
+        pricingPlansContainer.style.overflowX = 'unset';
+    } else {
+        pricingPlansContainer.style.overflowX = 'auto';
+        resetSlider();
+    }
+});
+
+// Set interval for auto-scroll
+setInterval(autoScroll, 3000);
+
