@@ -123,7 +123,7 @@ li a:hover {
 }
 
 .dropdown-service li a {
-    color: #5e8e45;
+    color: #1687A7;
 }
 
 .dropdown-service li a:hover {
@@ -511,7 +511,7 @@ button:hover {
     position: relative;
     display: inline-block;
     padding: 12px 20px;
-    background-color: #2977dd;
+    background-color: #1687A7;
     /* Initial button color */
     color: white;
     text-transform: uppercase;
@@ -1184,7 +1184,7 @@ button:hover {
 .fa-map-marker-alt {
     font-size: 19px;
     margin-right: 10px;
-    color: #000;
+    color: #1687A7;
     /* Green for WhatsApp */
 }
 
