@@ -153,7 +153,7 @@ li a:hover {
 .btn button {
     padding: 10px 20px;
     border-radius: 35px;
-    background: #02044c;
+    background: #1687A7;
     border: none;
     color: white;
     font-family: sans-serif;
@@ -496,7 +496,7 @@ button:hover {
 
 .service-info h1 {
     font-size: 28px;
-    color: #34679b;
+    color: #1687A7;
     margin-bottom: 16px;
 }
 
@@ -915,21 +915,21 @@ button:hover {
 
 .card-service h5 {
     margin-top: 10px;
-    color: #007bff;
+    color: #1687A7;
     font-size: 18px;
     font-weight: bold;
 }
 
 .card-service p {
     font-size: 14px;
-    color: #02044c;
+    color: #000;
     margin: 10px 0;
     line-height: 1.5;
     /* Better readability */
 }
 
 .card-service button {
-    background-color: #02044c;
+    background-color: #1687A7;
     color: #fff;
     margin-top: 10px;
     border: none;
@@ -961,12 +961,12 @@ button:hover {
     font-family: Arial, sans-serif;
     font-weight: 600;
     font-size: 18px;
-    color: #578fe2;
+    color: #1687A7;
 }
 
 .provide h3 {
     font-size: 36px;
-    color: #090965;
+    color: #1687A7;
     font-family: Arial, sans-serif;
     font-weight: 600;
     margin-bottom: 10px;
@@ -1103,7 +1103,6 @@ button:hover {
     /* Center the background */
     padding: 40px 20px;
     /* Add padding for spacing */
-    color: #02044c;
 }
 
 .footer-bypass {
@@ -1130,7 +1129,7 @@ button:hover {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #02044c;
+    color: #1687A7;
 }
 
 .footer-service a {
@@ -1138,7 +1137,7 @@ button:hover {
     white-space: nowrap;
     list-style: none;
     font-size: 14px;
-    color: #02044c;
+    color: #000;
     transition: color 0.3s ease, text-decoration 0.3s ease;
     /* Smooth hover effect */
 }
@@ -1185,16 +1184,16 @@ button:hover {
 .fa-map-marker-alt {
     font-size: 19px;
     margin-right: 10px;
-    color: #090965;
+    color: #000;
     /* Green for WhatsApp */
 }
 
 .fa-phone {
-    color: #02044c;
+    color: #1687A7;
 }
 
 .fa-envelope {
-    color: #02044c;
+    color: #1687A7;
 }
 
 
@@ -1274,9 +1273,7 @@ button:hover {
 .whatsapp-icon-fix {
     position: fixed;
     bottom: 78px;
-    /* Distance from the bottom of the screen */
     right: 20px;
-    /* Distance from the right of the screen */
     width: 60px;
     /* Icon size */
     height: 60px;
@@ -1325,7 +1322,7 @@ button:hover {
     align-items: center;
     display: flex;
     justify-content: center;
-    background: rgba(0, 0, 83, 0.925);
+    background: #1687A7;
     padding: 60px 0 50px 0;
 }
 
@@ -1352,7 +1349,7 @@ button:hover {
     line-height: 1.4;
     font-weight: 600;
     font-family: sans-serif;
-    color: #307cbe;
+    color: #1687A7;
 }
 
 .header-price p {
@@ -1405,7 +1402,7 @@ button:hover {
 
 .plan .price {
     font-size: 24px;
-    color: #007bff;
+    color: #1687A7;
     margin-bottom: 20px;
     transition: transform 1s ease, opacity 1s ease;
 }
@@ -1421,7 +1418,7 @@ button:hover {
     bottom: -50px;
     left: 0;
     right: 0;
-    background-color: #007bff;
+    background-color: #1687A7;
     color: #fff;
     padding: 10px;
     height: 57px;
